@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git & GitHub Guide</title>
+  <style>
+    /* --- Global Styles --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      background: #161b22;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #30363d;
+    }
+    header h1 {
+      color: #f78166;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f78166;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    section p {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    /* Cards */
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #238636;
+      color: white;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #2ea043;
+    }
+
+    /* Footer */
+    footer {
+      background: #161b22;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #30363d;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Git & GitHub Guide</h1>
+    <nav>
+      <a href="#git">Git</a>
+      <a href="#github">GitHub</a>
+      <a href="#commands">Commands</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Git Section -->
+  <section id="git">
+    <h2>What is Git?</h2>
+    <div class="card">
+      <p>Git is a free and open-source distributed version control system that helps developers track changes in source code.</p>
+      <ul>
+        <li>✅ Keeps track of code history</li>
+        <li>✅ Allows collaboration among developers</li>
+        <li>✅ Works offline and locally</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GitHub Section -->
+  <section id="github">
+    <h2>What is GitHub?</h2>
+    <div class="card">
+      <p>GitHub is a cloud-based hosting service that lets you manage Git repositories online.</p>
+      <ul>
+        <li>✅ Share code with others</li>
+        <li>✅ Work with teams worldwide</li>
+        <li>✅ Provides project management tools</li>
+      </ul>
+      <a href="https://github.com" target="_blank" class="btn">Visit GitHub</a>
+    </div>
+  </section>
+
+  <!-- Commands Section -->
+  <section id="commands">
+    <h2>Common Git Commands</h2>
+    <div class="card">
+      <p>Here are some essential Git commands:</p>
+      <pre style="text-align:left; background:#0d1117; padding:10px; border:1px solid #30363d; border-radius:5px;">
+git init         → Initialize repository
+git clone URL    → Clone a repo
+git status       → Check status
+git add .        → Stage changes
+git commit -m "" → Save changes
+git push         → Upload to GitHub
+git pull         → Download updates
+      </pre>
+    </div>
+    <button class="btn" onclick="showTip()">Show Quick Tip</button>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Have questions about Git & GitHub?</p>
+      <p>Email: <a href="mailto:example@mail.com" style="color:#58a6ff;">example@mail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Git & GitHub Guide. Built with ❤️ in HTML, CSS & JS.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showTip() {
+      alert("��� Pro Tip: Commit often with clear messages to track your project effectively!");
+    }
+  </script>
+
+</body>
+</html>
+
